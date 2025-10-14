@@ -1,0 +1,30 @@
+2025-10-14T22:31:42.360+02:00  INFO 20652 --- [lecture-3-uppgifter] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-14T22:31:42.749+02:00  INFO 20652 --- [lecture-3-uppgifter] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ec5f944
+2025-10-14T22:31:42.751+02:00  INFO 20652 --- [lecture-3-uppgifter] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-14T22:31:42.820+02:00  WARN 20652 --- [lecture-3-uppgifter] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-14T22:31:42.922+02:00  INFO 20652 --- [lecture-3-uppgifter] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-14T22:31:44.039+02:00  INFO 20652 --- [lecture-3-uppgifter] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-14T22:31:44.123+02:00  INFO 20652 --- [lecture-3-uppgifter] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-14T22:31:44.596+02:00  WARN 20652 --- [lecture-3-uppgifter] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-14T22:31:45.042+02:00  INFO 20652 --- [lecture-3-uppgifter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-14T22:31:45.054+02:00  INFO 20652 --- [lecture-3-uppgifter] [main] c.n.l.Lecture3UppgifterApplication       : Started Lecture3UppgifterApplication in 5.856 seconds (process running for 6.791)
+2025-10-14T22:31:52.436+02:00  INFO 20652 --- [lecture-3-uppgifter] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14T22:31:52.436+02:00  INFO 20652 --- [lecture-3-uppgifter] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-14T22:31:52.439+02:00  INFO 20652 --- [lecture-3-uppgifter] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-14T22:32:55.089+02:00  INFO 20652 --- [lecture-3-uppgifter] [http-nio-8080-exec-4] c.n.l.advice.ControllerAdvice            : Validation Error occurred: {price=must be greater than or equal to 0}
+2025-10-14T22:33:58.934+02:00  INFO 20652 --- [lecture-3-uppgifter] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-14T22:33:58.961+02:00  INFO 20652 --- [lecture-3-uppgifter] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-14T22:33:58.968+02:00  INFO 20652 --- [lecture-3-uppgifter] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-14T22:33:58.972+02:00  INFO 20652 --- [lecture-3-uppgifter] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-14T22:33:58.985+02:00  INFO 20652 --- [lecture-3-uppgifter] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-14T22:41:31.084+02:00  WARN 15248 --- [lecture-3-uppgifter] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-14T22:41:34.339+02:00  WARN 15248 --- [lecture-3-uppgifter] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-14T22:46:04.512+02:00  WARN 13576 --- [lecture-3-uppgifter] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-14T22:46:07.382+02:00  WARN 13576 --- [lecture-3-uppgifter] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
