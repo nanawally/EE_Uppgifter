@@ -19,7 +19,7 @@ public class MessageService {
     }
 
     public Mono<Message> createMessage(Message message) {
-        Message entity = new Message(
+        Message messageEntity = new Message(
                 null,
                 message.message(), // or message.getMessage() depending on your getter
                 LocalDateTime.now(),
@@ -28,6 +28,6 @@ public class MessageService {
 
         logger.info("New message was created");
 
-        return messageRepository.save(entity);
+        return messageRepository.save(messageEntity);
     }
 }
