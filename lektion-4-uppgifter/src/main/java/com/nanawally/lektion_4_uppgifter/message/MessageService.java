@@ -25,6 +25,7 @@ public class MessageService {
                 LocalDateTime.now(),
                 false
         );
+
         logger.info("New message was created");
 
         return messageRepository.save(entity);
